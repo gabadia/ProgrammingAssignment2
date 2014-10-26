@@ -7,6 +7,7 @@
 ##      3) replacing the word "mean" witn "inverse"
 ##      4) replacing the word "getmean" with "getinverse"
 ##      5) replacing the word "setmean" with "setinverse"
+##      6) replacing the function "mean()" with "solve()"
 #########################################################################################
 
 ## From what I can tell, this assignment allows us to 
