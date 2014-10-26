@@ -13,22 +13,20 @@
 ## - practice creating customized functions
 ## - store functions in a list with named elements
 ## - reference functions in a list with named elements
-## - store objects in the environment
-## - retrieve objects from the environment
+## - use assignment operator "<<-" which cause a search to be made through parent environments 
+##   for an existing definition of the variable being assigned
 ##
-## NOTE: Function is very limitied as it can only store one matrix and its inverse.  However all we
-## would need to do is create a list of list and loop through it order to create a function
-## that could store several matrices and its inverse 
+## NOTE: Function is very limitied as it can only store one matrix and its inverse
 
 
-## makematrix creates a special "matrix", which is really a list containing a function to
+## makematrix creates a list with named element members containing functions to
 
-##    set the value of the matrix
-##    get the value of the matrix
-##    set the value of the inverse
-##    get the value of the inverse
+##    set the value of the matrix   - set()
+##    get the value of the matrix   - get()
+##    set the value of the inverse  - setinverse()
+##    get the value of the inverse  - getinverse() 
 
-## Returns the special matrix described above
+## Returns the list specified above
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
